@@ -12,7 +12,7 @@ This is a university Cloud Computing project: a serverless blood donor managemen
 - Public GitHub repository: https://github.com/Tarushii/LifeLink
 - Remote: `origin` → `https://github.com/Tarushii/LifeLink.git`
 - Branch: `main`, tracking `origin/main`.
-- Latest pushed commit before this milestone: `33394c6` — progress handoff. Authentication changes described below are local and not yet pushed.
+- Authentication implementation pushed to public `main`: `f8c1ef9` — `Add Cognito authentication integration and setup template`.
 - Windows / PowerShell. Node.js is available; no npm dependencies are required.
 - The `python` command resolved to an unusable Windows Store alias during setup. Prefer Node.js for preview.
 
@@ -37,6 +37,8 @@ This is a university Cloud Computing project: a serverless blood donor managemen
 ## Current limits — do not mistake previews for implemented features
 
 No AWS resources have been provisioned or live-tested. Cognito integration code and frontend role checks exist, but actual login needs stack deployment and `frontend/config.js` values. Users get no role from the public selector: a trusted administrator must assign a Cognito group. New accounts without groups see an account-pending page. Backend authorization, APIs, persistence, matching, responses, SNS, SQS and monitoring remain **unimplemented**. Dashboard records and request forms are previews. No fabricated donors/statistics or configured AWS credentials. The full project is not complete.
+
+Latest deployment attempt: user requested pushing changes and establishing Cognito. Push succeeded. No AWS CLI was found on PATH or in standard installation paths, and no local AWS profile files were found. Opened AWS Cognito console in Mumbai (`ap-south-1`) in the in-app browser; it redirected to AWS sign-in. Waiting for the user to sign in there before continuing provisioning. Never request passwords or AWS secret keys in chat. No AWS resources created during this attempt.
 
 ## Run and verify
 
