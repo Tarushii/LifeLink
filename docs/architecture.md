@@ -23,8 +23,8 @@ SQS buffers asynchronous work; it does not supply priority ordering. Implement e
 
 ## Delivery milestones
 
-1. Foundation: repository, page layouts, navigation and honest empty states (current).
-2. Identity: Cognito, role-aware pages and API authorization.
+1. Foundation: repository, page layouts, navigation and honest empty states (implemented).
+2. Identity: Cognito frontend integration and provisioning template (implemented locally; deployment/live verification pending). API authorization remains planned.
 3. Core records: DynamoDB schema, validated APIs, profiles and request persistence.
 4. Matching: configurable compatibility, location, availability and eligibility rules.
 5. Processing: SQS, scheduler, SNS and idempotent processing.
